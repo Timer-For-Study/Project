@@ -13,7 +13,7 @@ struct ShareConstant {
     
     private init(){}
     
-    var reachability = Reachability()!
+//    var reachability = Reachability()!
     
     // Method - Date를 String 형태로 변환 (format: 연도 + 월 + 날 + 시간 + 분 + 초)
     func dateToString(date: NSDate, format: NSString, localIdentifier: NSString) -> NSString {

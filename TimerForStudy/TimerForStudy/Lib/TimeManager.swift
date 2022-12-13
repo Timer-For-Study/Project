@@ -13,19 +13,19 @@ final class TimeManager {
     
     var timer = Timer()
     var passTime: TimeInterval?
+    var passTimeStr: String?
     var startTime: Date?
     
     private init(){
-        NotificationCenter.default.addObserver(self, selector: #selector(toast), name: NSNotification.Name("TestNotification"), object: nil)
+
         self.startTime = Date.now
     }
     
     // Timer Scheduler Test Code
     @objc func toast(){
-        guard let time = self.passTime else{return}
+
         
-        let timeStr = String(time)
-        UIView().displayToast(timeStr + "초 경과")
+        
     }
     
     public func resetTimer(){
@@ -36,9 +36,13 @@ final class TimeManager {
     }
     
     public func startTimer(){
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { Timer in
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
             self.passTime = round(self.startTime?.timeIntervalSinceNow ?? 0.0) * -1
             NotificationCenter.default.post(name: NSNotification.Name("TestNotification"), object: nil)
+            guard let time = self.passTime else{return}
+            
+            let timeStr = String(time)
+            self.passTimeStr = timeStr
         }
         
  

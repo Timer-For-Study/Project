@@ -9,20 +9,20 @@ import Foundation
 
 class NetworkManager {
     func checkNetworking() {
-        let reachability = ShareConstant.shared.reachability
-        reachability.whenUnreachable = { _ in
-            NotificationCenter.default.post(name: NSNotification.Name.init("NetworkError"), object: nil)
-        }
+//        let reachability = ShareConstant.shared.reachability
+//        reachability.whenUnreachable = { _ in
+//            NotificationCenter.default.post(name: NSNotification.Name.init("NetworkError"), object: nil)
+//        }
+//
+//        reachability.whenReachable = { _ in
+//            print("Connect to network")
+//        }
         
-        reachability.whenReachable = { _ in
-            print("Connect to network")
-        }
-        
-        do{
-            try reachability.startNotifier()
-        }catch{
-            print("could not start reachability notifier")
-        }
+//        do{
+//            try reachability.startNotifier()
+//        }catch{
+//            print("could not start reachability notifier")
+//        }
     }
     
     deinit {
