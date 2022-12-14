@@ -9,21 +9,31 @@ import Foundation
 import UIKit
 
 final class TimeManager {
+    enum SessionState: Double {
+        case ready
+        case paused
+        case timing
+    }
     static let shared = TimeManager()
     
-    var timer = Timer()
+    private(set) var timer = Timer()
     var passTime: TimeInterval?
     var passTimeStr: String?
     var startTime: Date?
     
+    // pomodoro properties
+    var status = false // false: 휴식, true: 집중
+    var breakTime: Int?
+    var focusTime: Int?
+    
+    
     private init(){
-
         self.startTime = Date.now
     }
     
     // Timer Scheduler Test Code
     @objc func toast(){
-
+        
         
         
     }
@@ -45,7 +55,7 @@ final class TimeManager {
             self.passTimeStr = timeStr
         }
         
- 
+        
     }
     
 }

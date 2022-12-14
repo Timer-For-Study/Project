@@ -32,8 +32,11 @@
 		E13730B029485BE600EE804A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13730AF29485BE600EE804A /* NetworkManager.swift */; };
 		E13730B229485C0800EE804A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13730B129485C0800EE804A /* Reachability.swift */; };
 		E13730B429485C4500EE804A /* ShareConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13730B329485C4500EE804A /* ShareConstant.swift */; };
+		E161212E29494A5C0009FD4F /* lottie_sandClock.json in Resources */ = {isa = PBXBuildFile; fileRef = E161212D29494A5C0009FD4F /* lottie_sandClock.json */; };
+		E161212F29494A5C0009FD4F /* lottie_sandClock.json in Resources */ = {isa = PBXBuildFile; fileRef = E161212D29494A5C0009FD4F /* lottie_sandClock.json */; };
+		E161213029494A5C0009FD4F /* lottie_sandClock.json in Resources */ = {isa = PBXBuildFile; fileRef = E161212D29494A5C0009FD4F /* lottie_sandClock.json */; };
 		E1982D6D29486C5B008EE0DF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E1982D6C29486C5B008EE0DF /* Lottie */; };
-		E1D7C7452948ADD4004B61CC /* progress.json in Resources */ = {isa = PBXBuildFile; fileRef = E1D7C7442948ADD4004B61CC /* progress.json */; };
+		E1D7C7452948ADD4004B61CC /* lottie_timer.json in Resources */ = {isa = PBXBuildFile; fileRef = E1D7C7442948ADD4004B61CC /* lottie_timer.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +87,8 @@
 		E13730AF29485BE600EE804A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		E13730B129485C0800EE804A /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		E13730B329485C4500EE804A /* ShareConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareConstant.swift; sourceTree = "<group>"; };
-		E1D7C7442948ADD4004B61CC /* progress.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = progress.json; sourceTree = "<group>"; };
+		E161212D29494A5C0009FD4F /* lottie_sandClock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_sandClock.json; sourceTree = "<group>"; };
+		E1D7C7442948ADD4004B61CC /* lottie_timer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_timer.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +241,8 @@
 		E11BFEDB29345B840017FBB0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E1D7C7442948ADD4004B61CC /* progress.json */,
+				E161212D29494A5C0009FD4F /* lottie_sandClock.json */,
+				E1D7C7442948ADD4004B61CC /* lottie_timer.json */,
 				E11BFEB429345A720017FBB0 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -377,7 +382,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6A290A2935BA65009D8905 /* .swiftlint.yml in Resources */,
-				E1D7C7452948ADD4004B61CC /* progress.json in Resources */,
+				E161212E29494A5C0009FD4F /* lottie_sandClock.json in Resources */,
+				E1D7C7452948ADD4004B61CC /* lottie_timer.json in Resources */,
 				E11BFEB829345A720017FBB0 /* LaunchScreen.storyboard in Resources */,
 				E11BFEB529345A720017FBB0 /* Assets.xcassets in Resources */,
 				E11BFEB029345A700017FBB0 /* Main.storyboard in Resources */,
@@ -388,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E161212F29494A5C0009FD4F /* lottie_sandClock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E161213029494A5C0009FD4F /* lottie_sandClock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
